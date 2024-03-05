@@ -1,0 +1,9 @@
+# Ignore files and directories
+/node_modules
+/build
+/dist
+
+# Ignore specific file types
+*.log
+*.tmp
+.DS_Store

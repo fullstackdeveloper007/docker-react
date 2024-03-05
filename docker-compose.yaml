@@ -1,0 +1,21 @@
+# version: '3'
+# services:
+#   app:
+#     image: your_image_name
+#     ports:
+#       - 3000:3000
+
+version: '1'
+services:
+  reactapp:
+    #build: /reactapp 
+    #above path of reactapp incase docker-compose 
+    #is on different location we need to give 
+    #the relative path of reactapp folder
+    build: . # it means parent folder
+    container_name: docker-react_C
+    ports:
+      - "3000:3000"      
+    stdin_open: true
+    tty: true  
+  
